@@ -1,7 +1,5 @@
 const formEl = document.querySelector('.form');
 
-// Initialize Notiflix library
-Notiflix.Notify.Init({ position: 'center', timeout: 2000 });
 
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
