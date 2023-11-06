@@ -1,3 +1,4 @@
+import Notiflix from 'notiflix';
 const formEl = document.querySelector('.form');
 
 
