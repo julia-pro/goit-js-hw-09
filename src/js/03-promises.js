@@ -26,7 +26,7 @@ function onSubmit(evt) {
   let delayVal = Number(delay.value);
 
 for (let i = 1; i <= amountVal; i += 1) {
-    const promiseDelay = i === 1 ? 0 : (i - 2) * stepVal + delayVal;
+  const promiseDelay = (i - 1) * stepVal + delayVal;
     createPromise(i, promiseDelay).then(({ position, delay }) => {
       console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
     }).catch(({ position, delay }) => {
